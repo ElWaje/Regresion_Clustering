@@ -160,10 +160,34 @@ pip install -r requirements.txt
 
 ## 📄 **Documentación y Reportes**
 
-En la carpeta `/reports` encontrarás:
-- Informe exploratorio (EDA)
-- Informe de predicciones
-- Comparación de modelos (escalados vs no escalados)
+
+## 🔗 **Hipervínculos**
+
+### **Código fuente del proyecto:**
+
+- [menu.py](https://github.com/ElWaje/Regresion_Clustering/tree/main/menu.py)
+- [codigo.py](https://github.com/ElWaje/Regresion_Clustering/tree/main/codigo.py)
+- [cluster.py](https://github.com/ElWaje/Regresion_Clustering/tree/main/cluster.py)
+- [assets/styles.css](https://github.com/ElWaje/Regresion_Clustering/tree/main/assets/styles.css)
+- [sample_data/data.csv](https://github.com/ElWaje/Regresion_Clustering/tree/main/sample_data/data.csv)
+
+### **Enlaces a los Informes de Regresión:**
+
+- [Informe de Análisis de Datos EDA](https://github.com/ElWaje/Regresion_Clustering/tree/main/reports/informe_eda.html)
+- [Informe de Pandas Profiling](https://github.com/ElWaje/Regresion_Clustering/tree/main/reports/informe_profiling.html)
+- [Informe de predicción de ventas (No Escalado)](https://github.com/ElWaje/Regresion_Clustering/tree/main/reports/informe_prediccion_no_escalado.html)
+- [Informe de predicción de ventas (Escalado)](https://github.com/ElWaje/Regresion_Clustering/tree/main/reports/informe_prediccion_escalado.html)
+- [Informe de Comparación de Modelos (Escalado vs No Escalado)](https://github.com/ElWaje/Regresion_Clustering/tree/main/reports/comparacion_modelos.html)
+
+### **Enlaces a los Informes de Clustering:**
+
+- [Informe Clustering](https://github.com/ElWaje/Regresion_Clustering/tree/main/reports/informe_clustering.html)
+- [Informe comparación Clustering](https://github.com/ElWaje/Regresion_Clustering/tree/main/reports/comparacion_clustering.html)
+- [Informe Clustering Kmeans](https://github.com/ElWaje/Regresion_Clustering/tree/main/reports/informe_kmeans.html)
+- [Informe Clustering Dbscan](https://github.com/ElWaje/Regresion_Clustering/tree/main/reports/informe_dbscan.html)
+- [Informe Clustering Agglomerative](https://github.com/ElWaje/Regresion_Clustering/tree/main/reports/informe_agglomerative.html)
+- [Informe Clustering Gmm](https://github.com/ElWaje/Regresion_Clustering/tree/main/reports/informe_gmm.html)
+
 
 ---
 
