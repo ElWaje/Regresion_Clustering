@@ -1,0 +1,197 @@
+:root {
+    /* Tipografías y colores base */
+    --font-base: 'Poppins', sans-serif;
+    --color-fondo: #f2f2f2;
+    /* Fondo general de la página */
+    --color-fondo-gradiente-ini: #a8c0ff;
+    /* Color inicial del gradiente de fondo */
+    --color-fondo-gradiente-fin: #3f2b96;
+    /* Color final del gradiente de fondo */
+    --color-contenedor: #ffffff;
+    /* Fondo principal de contenedores */
+    --color-texto: #333;
+    /* Color del texto */
+    --color-primario: #5f76f3;
+    /* Color principal (usado en degradados) */
+    --color-secundario: #3f2b96;
+    /* Color secundario de apoyo */
+    --color-filacontenido: #fafafa;
+    /* Fondo de filas pares */
+    --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    --border-radius: 10px;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo con gradiente en el body */
+body {
+    font-family: var(--font-base);
+    background: linear-gradient(135deg,
+            var(--color-fondo-gradiente-ini) 0%,
+            var(--color-fondo-gradiente-fin) 100%);
+    min-height: 100vh;
+    color: var(--color-texto);
+    padding: 20px;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+    background: var(--color-contenedor);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    /* Por si hay elementos que se salen del contenedor */
+}
+
+/* Encabezados */
+h1,
+h2,
+h3 {
+    color: var(--color-texto);
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+}
+
+/* Pequeño subrayado decorativo en los h1/h2 */
+h1::after,
+h2::after {
+    content: "";
+    display: block;
+    margin: 10px auto 0 auto;
+    width: 80px;
+    height: 3px;
+    background-color: var(--color-primario);
+    border-radius: 2px;
+}
+
+/* Contenedores de información (info-box) */
+.info-box {
+    background-color: var(--color-filacontenido);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+    transition: transform 0.2s ease;
+}
+
+.info-box:hover {
+    transform: translateY(-2px);
+}
+
+.code-block {
+    background-color: #f9f9f9;
+    border-left: 4px solid #007BFF;
+    padding: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.95rem;
+    white-space: pre-wrap;
+    line-height: 1.5;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+/* Contenedor para tablas */
+.table-container {
+    overflow-x: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/* Tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+/* Encabezado de tabla con degradado */
+th {
+    background: linear-gradient(135deg, var(--color-primario) 0%, var(--color-secundario) 100%);
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding: 12px 15px;
+    text-align: left;
+}
+
+/* Filas */
+td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+    font-size: 0.95rem;
+}
+
+/* Colores para filas pares/impares */
+tbody tr:nth-child(odd) {
+    background-color: #f5f7ff;
+    /* Fila impar */
+}
+
+tbody tr:nth-child(even) {
+    background-color: #eef2ff;
+    /* Fila par */
+}
+
+/* Hover en filas */
+tbody tr:hover {
+    background-color: #dce1ff;
+    transition: background-color 0.3s ease;
+}
+
+.highlight {
+    background-color: #dff0d8;
+    /* Un fondo verde claro */
+    font-weight: bold;
+}
+
+/* Botones (ej. "Actualizar Informe") */
+button,
+.btn {
+    background-color: var(--color-primario);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: 500;
+}
+
+button:hover,
+.btn:hover {
+    background-color: var(--color-secundario);
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    .container {
+        margin: 10px auto;
+        padding: 15px;
+    }
+
+    th,
+    td {
+        padding: 8px;
+        font-size: 0.85rem;
+    }
+
+    h1::after,
+    h2::after {
+        width: 50px;
+    }
+}
